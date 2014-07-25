@@ -1,0 +1,7 @@
+public boolean isInternet() 
+	{
+		boolean isInternet;
+		ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+		isInternet = cd.isConnectingToInternet();
+		return isInternet;
+	}
